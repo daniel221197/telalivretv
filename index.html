@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela Livre IPTV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: url('https://tse2.mm.bing.net/th?id=OIP.Uq8x5PpFECOvJS0t9vaCxAHaFC&pid=Api') no-repeat center center/cover;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #00ffd1;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .planos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .plano {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+    .plano:hover {
+      transform: scale(1.05);
+    }
+    .plano h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #00ffd1;
+    }
+    .plano p {
+      font-size: 1rem;
+    }
+    .beneficios, .dispositivos, .pagamentos, .garantia {
+      text-align: center;
+      margin-bottom: 3rem;
+      animation: fadeIn 3.5s ease-in-out;
+    }
+    .beneficios h2, .dispositivos h2, .pagamentos h2, .garantia h2 {
+      margin-bottom: 1rem;
+    }
+    .beneficios ul {
+      list-style: none;
+      line-height: 2rem;
+    }
+    .beneficios ul li::before {
+      content: '✅';
+      margin-right: 0.5rem;
+    }
+    .icones {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 1.2rem;
+    }
+    .icone-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    .garantia p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .estrelas {
+      color: gold;
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-size: 1rem;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .whatsapp-btn:hover {
+      background: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Tela Livre</h1>
+    </header>
+    <section class="hero">
+      <h2>Chegou a liberdade que você merece!</h2>
+      <p>Assista milhares de canais, filmes, séries e esportes com qualidade e estabilidade total. 24 horas por dia com suporte profissional.</p>
+    </section>
+    <section class="beneficios">
+      <h2>Benefícios dos nossos planos</h2>
+      <ul>
+        <li>Mais de 10.000 canais nacionais e internacionais</li>
+        <li>Filmes, séries, esportes e canais adultos</li>
+        <li>Atualizações automáticas</li>
+        <li>Qualidade HD / FULL HD / 4K</li>
+        <li>Suporte 24 horas</li>
+      </ul>
+    </section>
+    <section class="dispositivos">
+      <h2>Compatível com</h2>
+      <div class="icones">
+        <div class="icone-item">📺 Smart TVs</div>
+        <div class="icone-item">📦 TV Box / Fire Stick</div>
+        <div class="icone-item">💻 Computador</div>
+        <div class="icone-item">📱 Celular</div>
+      </div>
+    </section>
+    <section class="planos">
+      <div class="plano">
+        <h3>1 Mês</h3>
+        <p>R$ 35,00</p>
+      </div>
+      <div class="plano">
+        <h3>3 Meses</h3>
+        <p>R$ 90,00</p>
+      </div>
+      <div class="plano">
+        <h3>6 Meses</h3>
+        <p>R$ 160,00</p>
+      </div>
+      <div class="plano">
+        <h3>1 Ano</h3>
+        <p>R$ 310,00</p>
+      </div>
+    </section>
+    <section class="pagamentos">
+      <h2>Formas de Pagamento</h2>
+      <div class="icones">
+        <div class="icone-item">💸 Pix</div>
+        <div class="icone-item">💳 Cartão de Crédito/Débito</div>
+      </div>
+    </section>
+    <section class="garantia">
+      <h2>Suporte 24/7, Atendimento Especializado</h2>
+      <p>Garantia de Satisfação 5 Estrelas</p>
+      <div class="estrelas">⭐⭐⭐⭐⭐</div>
+    </section>
+    <footer>
+      <p>&copy; 2025 Tela Livre IPTV – Todos os direitos reservados.</p>
+    </footer>
+  </div>
+  <a class="whatsapp-btn" href="https://wa.me/5517935006483" target="_blank">Fale Conosco no WhatsApp</a>
+</body>
+</html>
