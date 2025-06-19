@@ -105,9 +105,20 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
-    .garantia p {
+    .garantia .caixas {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .caixa {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      max-width: 300px;
       font-size: 1.2rem;
-      margin-top: 1rem;
     }
     .estrelas {
       color: gold;
@@ -191,9 +202,17 @@
       </div>
     </section>
     <section class="garantia">
-      <h2>Suporte 24/7, Atendimento Especializado</h2>
-      <p>Garantia de Satisfação 5 Estrelas</p>
-      <div class="estrelas">⭐⭐⭐⭐⭐</div>
+      <h2>Suporte 24/7 e Satisfação Garantida</h2>
+      <div class="caixas">
+        <div class="caixa">
+          🛠️ Suporte 24 horas por dia, 7 dias por semana<br>
+          Atendimento especializado e rápido!
+        </div>
+        <div class="caixa">
+          ⭐ Garantia de satisfação total!<br>
+          <div class="estrelas">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
     </section>
     <footer>
       <p>&copy; 2025 Tela Livre IPTV – Todos os direitos reservados.</p>
